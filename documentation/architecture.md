@@ -27,6 +27,7 @@ Attributes:
 - amount
 - vendor_name
 - payment_status
+- date_added
 
 ## 2. ER DIAGRAM RELATIONSHIPS
 
@@ -75,28 +76,26 @@ Meaning:
 - total_budget > 0 (Budget must be positive)
 - budget_limit > 0 (Category limit must be positive)
 - amount > 0 (Expense amount must be positive)
-- warning_threshold BETWEEN 50 AND 95 (Alert between 50% to 95% spending)
 
 ### DEFAULT Values (Auto-filled):
 - created_date = SYSDATE (current date/time)
 - date_added = SYSDATE (current date/time)
-- status = 'PLANNING' (default event status)
 - payment_status = 'PENDING' (default payment status)
 
 ## 7. NORMALIZATION (3NF ACHIEVED)
 
 ### First Normal Form (1NF):
-- Each table has a primary key
-- All columns contain atomic values (no lists or arrays)
-- No repeating groups of columns
+- ✓ Each table has a primary key
+- ✓ All columns contain atomic values (no lists or arrays)
+- ✓ No repeating groups of columns
 
 ### Second Normal Form (2NF):
-- All non-key columns depend on the ENTIRE primary key
-- Example: In EXPENSES table, 'amount' depends on the whole 'expense_id' (not just part of it)
+- ✓ All non-key columns depend on the ENTIRE primary key
+- ✓ Example: In EXPENSES table, 'amount' depends on the whole 'expense_id' (not just part of it)
 
 ### Third Normal Form (3NF):
-- No transitive dependencies (no column depends on another non-key column)
-- Example: 'vendor_name' does not determine 'amount', and 'amount' does not determine 'payment_status'
+- ✓ No transitive dependencies (no column depends on another non-key column)
+- ✓ Example: 'vendor_name' does not determine 'amount', and 'amount' does not determine 'payment_status'
 
 ### Benefits of 3NF:
 1. **No Data Duplication** - Each fact stored in one place only
@@ -117,7 +116,7 @@ Meaning:
 1. Budget vs Actual Spending Report
 2. Category-wise Expense Analysis
 3. Vendor Payment Tracking Report
-4. Event Status Dashboard
+4. Time-based Expense Report (using date_added)
 
 ### Audit Trail Design:
 - Will be implemented in Phase VII using triggers
