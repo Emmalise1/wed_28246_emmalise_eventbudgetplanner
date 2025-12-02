@@ -74,7 +74,7 @@ The system will support decision-making through:
 ### Triggers:
 1. **`check_budget_limit`** - Alerts users if a new expense exceeds category or total budget
 2. **`update_category_spending`** - Automatically updates category totals when expenses are added
-3. **`prevent_weekend_updates`** - Restricts database changes to weekends only (business rule)
+3. **`restrict_weekday_and_holiday_dml`** - Restricts database changes to weekends only (business rule)
 
 ### Packages:
 1. **`budget_management_pkg`** - Groups all budget-related procedures and functions
