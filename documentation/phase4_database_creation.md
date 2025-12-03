@@ -154,7 +154,7 @@ WHERE name IN ('sga_target', 'pga_aggregate_target');
 *Figure 1: PDB `WED_28246_EMMA_EVENT_BUDGET_PLANNER_DB` successfully created and opened*
 
 **Screenshot 2: Tablespace Configuration**  
-![Tablespace Configuration](https://screenshots/phase_iv/02_tablespaces.png)  
+![Tablespace Configuration](https://github.com/Emmalise1/Event-Budget-Planner/blob/main/screenshots/phase_iv/02_tablespaces.png?raw=true)  
 *Figure 2: `EVENT_DATA`, `EVENT_IDX`, and `EVENT_TEMP` tablespaces created with proper specifications*
 
 **Screenshot 3: Memory Parameters**  
