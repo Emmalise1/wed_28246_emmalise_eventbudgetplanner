@@ -34,7 +34,40 @@
 - **Foreign Key:** EXPENSES.category_id → EXPENSE_CATEGORIES.category_id
 - **Rule:** One category can have many expenses
 - **Delete Rule:** CASCADE (Delete category → Delete all its expenses)
+## SYSTEM TABLES (For Compliance & Business Rules)
 
+### Note: These tables support system functionality and Phase VII requirements but are not part of the core business entity model shown in the ER diagram.
+
+| Table | Column | Type | Constraints | Purpose |
+|-------|--------|------|-------------|---------|
+| **HOLIDAYS** | holiday_id | NUMBER(10) | PK, NOT NULL | Unique holiday identifier |
+| **HOLIDAYS** | holiday_date | DATE | NOT NULL UNIQUE | Date of holiday |
+| **HOLIDAYS** | holiday_name | VARCHAR2(100) | NOT NULL | Name of holiday |
+| **HOLIDAYS** | is_public_holiday | CHAR(1) | DEFAULT 'Y', CHECK IN ('Y','N') | Public holiday flag |
+| **AUDIT_LOG** | audit_id | NUMBER(10) | PK, NOT NULL | Unique audit identifier |
+| **AUDIT_LOG** | table_name | VARCHAR2(50) | NOT NULL | Table being modified |
+| **AUDIT_LOG** | operation_type | VARCHAR2(10) | NOT NULL, CHECK IN ('INSERT','UPDATE','DELETE') | Type of operation |
+| **AUDIT_LOG** | operation_date | TIMESTAMP | DEFAULT SYSTIMESTAMP | When operation occurred |
+| **AUDIT_LOG** | user_name | VARCHAR2(100) | DEFAULT USER | Who performed operation |
+| **AUDIT_LOG** | old_values | CLOB | - | Previous values (for UPDATE/DELETE) |
+| **AUDIT_LOG** | new_values | CLOB | - | New values (for INSERT/UPDATE) |
+| **AUDIT_LOG** | status | VARCHAR2(20) | CHECK IN ('SUCCESS','FAILED','BLOCKED') | Operation result |
+| **AUDIT_LOG** | error_message | VARCHAR2(4000) | - | Error details if failed |
+
+## TABLE CLASSIFICATION
+
+### Business Entities (Modeled in ER Diagram):
+1. **EVENTS** - Core business entity
+2. **EXPENSE_CATEGORIES** - Core business entity  
+3. **EXPENSES** - Core business entity
+
+### System Tables (For Phase VII Compliance):
+4. **HOLIDAYS** - Required for weekday/holiday restriction business rule
+5. **AUDIT_LOG** - Required for comprehensive auditing
+
+**Total Tables in Database:** 5
+**Total Columns:** 30
+  
 ## SAMPLE DATA
 
 ### EVENTS Sample Row:
@@ -90,7 +123,10 @@
 
 ---
 
-**TOTAL TABLES:** 3  
-**TOTAL COLUMNS:** 17  
+**BUSINESS TABLES IN ER DIAGRAM:** 3  
+**SYSTEM TABLES (NOT IN ER DIAGRAM):** 2  
+**TOTAL TABLES IN DATABASE:** 5  
+**TOTAL COLUMNS:** 30  
 **NORMALIZATION:** 3NF Achieved  
-**STUDENT:** IZA KURADUSENGE Emma Lise (28246)
+**STUDENT:** IZA KURADUSENGE Emma Lise (28246)  
+**DESIGN NOTE:** HOLIDAYS and AUDIT_LOG tables are system infrastructure tables required for Phase VII business rule implementation, separate from business entity modeling.
