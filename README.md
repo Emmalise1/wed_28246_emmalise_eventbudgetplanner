@@ -63,7 +63,7 @@ CONNECT event_admin/emma@tue_28246_emma_eventbudget_db
 ## Links to Documentation
 - [Phase I - Problem Statement](documentation/phase1_problem_statement.md)
 - [Phase II - Business Process](documentation/phase2_business_process.md)  
-- [Phase III - Logical Design](documentation/phase3_logical_design.md)
+- [Phase III - Logical Design](documentation/architechure.md)
 - [Data Dictionary](documentation/data_dictionary.md)
 - [Design Decisions](documentation/design_decisions.md)
 - [Database Scripts](database/scripts/)
