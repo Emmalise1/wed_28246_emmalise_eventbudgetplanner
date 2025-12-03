@@ -35,8 +35,9 @@ Manual spreadsheet budgeting for events is error-prone, lacks real-time validati
 3. Create comprehensive audit trails
 4. Provide BI analytics for decision-making
 5. Restrict DML to weekends (Phase VII requirement)
-
+```
 ---
+
 ## Quick Start Instructions
 
 ```
@@ -58,15 +59,13 @@ CONNECT event_admin/emma@tue_28246_emma_eventbudget_db
 @database/scripts/05_triggers_audit.sql
 ```
 ```
-
 ---
 ## Links to Documentation
 - [Phase I - Problem Statement](documentation/phase1_problem_statement.md)
 - [Phase II - Business Process](documentation/phase2_business_process.md)  
-- [Phase III - Logical Design](documentation/architechure.md)
+- [Phase III - Logical Design](documentation/architecture.md)
 - [Data Dictionary](documentation/data_dictionary.md)
 - [Design Decisions](documentation/design_decisions.md)
 - [Database Scripts](database/scripts/)
 - [Screenshots](screenshots/)
-
 ```
