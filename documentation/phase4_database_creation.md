@@ -20,3 +20,20 @@ CREATE PLUGGABLE DATABASE wed_28246_emma_event_budget_planner_db
 ADMIN USER event_admin IDENTIFIED BY emma
 FILE_NAME_CONVERT = ('C:\ORACLE21C\ORADATA\ORCL\PDBSEED\', 
                      'C:\ORACLE21C\ORADATA\ORCL\WED_28246_EMMA_EVENT_BUDGET_PLANNER_DB\');
+
+## 3. Admin User Configuration  
+
+### User Details
+- **Username:** `event_admin`  
+- **Password:** `emma`  
+- **Privileges:** Super Admin (DBA Role)  
+- **Default Tablespace:** `EVENT_DATA`  
+- **Temporary Tablespace:** `EVENT_TEMP`  
+
+### Privileges Granted
+```sql
+GRANT DBA TO event_admin;
+GRANT UNLIMITED TABLESPACE TO event_admin;
+GRANT CREATE SESSION, CREATE TABLE, CREATE VIEW TO event_admin;
+GRANT CREATE SEQUENCE, CREATE SYNONYM TO event_admin;
+```
