@@ -8,13 +8,19 @@
 ---
 ## Student Name and ID
 
-STUDENT: "IZA KURADUSENGE Emma Lise"
-STUDENT_ID: 28246
-COURSE: "Database Development with PL/SQL (INSY 8311)"
-LECTURER: "Eric Maniraguha"
-UNIVERSITY: "Adventist University of Central Africa"
-SEMESTER: "I, 2025-2026"
-DEADLINE: "December 7, 2025"
+- STUDENT: "IZA KURADUSENGE Emma Lise"
+
+- STUDENT_ID: 28246
+
+- COURSE: "Database Development with PL/SQL (INSY 8311)"
+
+- LECTURER: "Eric Maniraguha"
+
+- UNIVERSITY: "Adventist University of Central Africa"
+
+- SEMESTER: "I, 2025-2026"
+
+- DEADLINE: "December 7, 2025"
 
 ---
 ## Problem Statement
@@ -32,6 +38,7 @@ Manual spreadsheet budgeting for events is error-prone, lacks real-time validati
 
 ---
 ## Quick Start Instructions
+
 ```bash
 # 1. Clone Repository
 git clone https://github.com/Emmalise1/Event-Budget-Planner.git
@@ -49,6 +56,8 @@ CONNECT event_admin/emma@tue_28246_emma_eventbudget_db
 # 4. PL/SQL Development
 @database/scripts/04_procedures_functions.sql
 @database/scripts/05_triggers_audit.sql
+
+```
 
 ---
 ## Links to Documentation
