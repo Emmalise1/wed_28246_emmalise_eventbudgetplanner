@@ -1,22 +1,61 @@
-# 🎯 EVENT BUDGET PLANNER SYSTEM
-## PL/SQL Oracle Database Capstone Project
+# Event Budget Planner System
+## PL/SQL Capstone Project - INSY 8311
 
 ---
-##  PROJECT OVERVIEW
-**Event Budget Planner System** is a production-ready Oracle PL/SQL database solution that automates event budget management. It replaces error-prone spreadsheet tracking with intelligent database features including real-time validation, automated auditing, business rule enforcement, and business intelligence capabilities.
-
-**Academic Context:** This project serves as the **FINAL EXAM** for **Database Development with PL/SQL (INSY 8311)** at Adventist University of Central Africa.
+## Project Title and Overview
+**Event Budget Planner System** is an Oracle PL/SQL database solution that automates event budget management with real-time validation, automated auditing, and business intelligence features. It replaces error-prone spreadsheet tracking with intelligent database automation.
 
 ---
-##  STUDENT INFORMATION
+## Student Name and ID
 
-STUDENT_NAME    = IZA KURADUSENGE Emma Lise
-STUDENT_ID      = 28246
-COURSE_CODE     = 'INSY 8311'
-COURSE_NAME     = 'Database Development with PL/SQL'
-UNIVERSITY      = 'Adventist University of Central Africa (AUCA)'
-LECTURER        = 'Eric Maniraguha'
-SEMESTER        = 'I, 2025-2026'
-PROJECT_DEADLINE = 'December 7, 2025'
-GITHUB_USER     = 'Emmalise1'
-REPOSITORY      = 'https://github.com/Emmalise1/Event-Budget-Planner'
+STUDENT: "IZA KURADUSENGE Emma Lise"
+STUDENT_ID: 28246
+COURSE: "Database Development with PL/SQL (INSY 8311)"
+LECTURER: "Eric Maniraguha"
+UNIVERSITY: "Adventist University of Central Africa"
+SEMESTER: "I, 2025-2026"
+DEADLINE: "December 7, 2025"
+
+---
+## Problem Statement
+Manual spreadsheet budgeting for events is error-prone, lacks real-time validation, and provides no automated alerts for overspending. This leads to budget overruns, financial crises during events, and inefficient resource allocation.
+
+---
+## Key Objectives
+```sql
+-- PROJECT OBJECTIVES
+1. Automate budget tracking with real-time validation
+2. Implement business rules via database constraints  
+3. Create comprehensive audit trails
+4. Provide BI analytics for decision-making
+5. Restrict DML to weekends (Phase VII requirement)
+
+---
+## Quick Start Instructions
+```bash
+# 1. Clone Repository
+git clone https://github.com/Emmalise1/Event-Budget-Planner.git
+cd Event-Budget-Planner
+
+# 2. Database Setup
+sqlplus / as sysdba
+@database/scripts/01_database_creation.sql
+
+# 3. Table Implementation  
+CONNECT event_admin/emma@tue_28246_emma_eventbudget_db
+@database/scripts/02_table_creation.sql
+@database/scripts/03_sample_data.sql
+
+# 4. PL/SQL Development
+@database/scripts/04_procedures_functions.sql
+@database/scripts/05_triggers_audit.sql
+
+---
+## Links to Documentation
+- [Phase I - Problem Statement](documentation/phase1_problem_statement.md)
+- [Phase II - Business Process](documentation/phase2_business_process.md)  
+- [Phase III - Logical Design](documentation/phase3_logical_design.md)
+- [Data Dictionary](documentation/data_dictionary.md)
+- [Design Decisions](documentation/design_decisions.md)
+- [Database Scripts](database/scripts/)
+- [Screenshots](screenshots/)
