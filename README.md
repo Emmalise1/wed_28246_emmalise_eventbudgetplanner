@@ -39,7 +39,7 @@ Manual spreadsheet budgeting for events is error-prone, lacks real-time validati
 ---
 ## Quick Start Instructions
 
-```bash
+```
 # 1. Clone Repository
 git clone https://github.com/Emmalise1/Event-Budget-Planner.git
 cd Event-Budget-Planner
@@ -58,7 +58,7 @@ CONNECT event_admin/emma@tue_28246_emma_eventbudget_db
 @database/scripts/05_triggers_audit.sql
 
 ```
-
+```
 ---
 ## Links to Documentation
 - [Phase I - Problem Statement](documentation/phase1_problem_statement.md)
@@ -68,3 +68,5 @@ CONNECT event_admin/emma@tue_28246_emma_eventbudget_db
 - [Design Decisions](documentation/design_decisions.md)
 - [Database Scripts](database/scripts/)
 - [Screenshots](screenshots/)
+
+```
