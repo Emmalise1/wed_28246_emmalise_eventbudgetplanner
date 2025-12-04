@@ -57,56 +57,66 @@ Phase V involved the implementation of physical database tables and insertion of
 
 ### Query Type Demonstrations
 
-#### 1. Basic Retrieval (SELECT *)
-All 5 tables successfully return data using SELECT * queries. Sample data from each table has been verified for correctness and completeness.
+---
 
-**Evidence:** `screenshots/test_results/basic_retrieval.jpg`
+###  Screenshot 1: Basic Retrieval (SELECT *)
 
-#### 2. Joins (Multi-table Queries)
-Multiple join types demonstrated:
-- INNER JOIN for complete event-category-expense chains
-- LEFT JOIN for budget vs actual spending analysis
-- Multiple table joins with filtering
+![Basic Retrieval](https://github.com/Emmalise1/Event-Budget-Planner/blob/main/screenshots/test_results/Basic%20retrieval1..PNG?raw=true)  
 
-**Evidence:** `screenshots/test_results/joins_results.jpg`
+![Basic Retrieval](https://github.com/Emmalise1/Event-Budget-Planner/blob/main/screenshots/test_results/Basic%20retrieval2..PNG?raw=true)
+*Figure 1: All 5 tables successfully returned data using SELECT * queries. Sample data from each table was verified for correctness and completeness.*
 
-#### 3. Aggregations (GROUP BY)
-Comprehensive statistical analysis performed:
-- Event type distribution with COUNT, AVG, SUM, MIN, MAX
-- Payment status analysis
-- Monthly expense trends
-- Vendor performance metrics
+---
 
-**Evidence:** `screenshots/test_results/aggregations.jpg`
+###  Screenshot 2: Joins (Multi-table Queries)
 
-#### 4. Subqueries
-All subquery types demonstrated:
-- Simple subqueries in WHERE clause
-- EXISTS and NOT EXISTS subqueries
-- IN subqueries with result sets
-- Correlated subqueries
-- Nested subqueries for complex analysis
+![Join Results](https://github.com/Emmalise1/Event-Budget-Planner/blob/main/screenshots/test_results/joins_results.jpg?raw=true)  
+*Figure 2: Multiple join types demonstrated, including INNER JOIN for event-category-expense chains, LEFT JOIN for budget vs actual analysis, and multi-table joins with filtering.*
 
-**Evidence:** `screenshots/test_results/subqueries.jpg`
+---
 
-### Data Integrity Verification
+### ✅ Screenshot 3: Aggregations (GROUP BY)
 
-#### Validation Results
-- All SELECT queries return data: PASS
-- All constraints properly enforced: PASS
-- Foreign key relationships validated: PASS
-- Data completeness verified: PASS
-- CASCADE DELETE working correctly: PASS
-- No orphaned records found: PASS
+![Aggregations](https://github.com/Emmalise1/Event-Budget-Planner/blob/main/screenshots/test_results/aggregations.jpg?raw=true)  
+*Figure 3: Statistical analysis using GROUP BY including event type distribution with COUNT, AVG, SUM, MIN, MAX, payment status analysis, monthly expense trends, and vendor performance metrics.*
 
-**Evidence:** `screenshots/test_results/data_integrity.jpg`
+---
 
-#### Business Rule Enforcement
-- No negative budgets or amounts
-- Valid payment statuses only (PENDING, PAID, CANCELLED, PARTIAL)
-- Unique holiday dates enforced
-- Required fields populated
-- Default values applied correctly
+### ✅ Screenshot 4: Subqueries
+
+![Subqueries](https://github.com/Emmalise1/Event-Budget-Planner/blob/main/screenshots/test_results/subqueries.jpg?raw=true)  
+*Figure 4: Demonstration of all subquery types including simple WHERE subqueries, EXISTS, NOT EXISTS, IN subqueries, correlated subqueries, and nested subqueries for complex analysis.*
+
+---
+
+## 🔐 Phase V Data Integrity Verification
+
+---
+
+### ✅ Screenshot 5: Data Integrity Validation
+
+![Data Integrity](https://github.com/Emmalise1/Event-Budget-Planner/blob/main/screenshots/test_results/data_integrity.jpg?raw=true)  
+*Figure 5: Validation results confirming referential integrity, constraint enforcement, and absence of orphaned records.*
+
+---
+
+### ✅ Validation Results Summary
+- All SELECT queries return data: **PASS**  
+- All constraints properly enforced: **PASS**  
+- Foreign key relationships validated: **PASS**  
+- Data completeness verified: **PASS**  
+- CASCADE DELETE working correctly: **PASS**  
+- No orphaned records found: **PASS**  
+
+---
+
+### ✅ Business Rule Enforcement Confirmed
+- No negative budgets or amounts  
+- Valid payment statuses only (**PENDING, PAID, CANCELLED, PARTIAL**)  
+- Unique holiday dates enforced  
+- Required fields populated  
+- Default values applied correctly  
+
 
 ##  Screenshot Organization
 
