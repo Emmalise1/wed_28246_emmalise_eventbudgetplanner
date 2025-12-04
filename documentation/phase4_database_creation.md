@@ -158,14 +158,52 @@ WHERE name IN ('sga_target', 'pga_aggregate_target');
 *Figure 2: `EVENT_DATA`, `EVENT_IDX`, and `EVENT_TEMP` tablespaces created with proper specifications*
 
 **Screenshot 3: Memory Parameters**  
-![Memory Parameters](https://screenshots/phase_iv/03_memory_config.png)  
+![Memory Parameters](https://github.com/Emmalise1/Event-Budget-Planner/blob/main/screenshots/phase_iv/03_memory_config.png?raw=true
+)  
 *Figure 3: `SGA_TARGET` (256M) and `PGA_AGGREGATE_TARGET` (128M) successfully configured*
 
 **Screenshot 4: Archive Logging Enabled**  
-![Archive Logging](https://screenshots/phase_iv/04_archive_logging.png)  
+![Archive Logging](https://github.com/Emmalise1/Event-Budget-Planner/blob/main/screenshots/phase_iv/04_archive_logging.png?raw=true)  
 *Figure 4: Archive logging enabled (`ARCHIVELOG` mode) for database recovery*
 
-**Screenshot 5: Final Verification**  
-![Final Verification](https://screenshots/phase_iv/05_verification.png)  
-*Figure 5: Complete verification of all database components and configurations*
+## 11. Conclusion  
+
+### Phase IV Success Summary
+The Event Budget Planner System database has been successfully created and configured according to all specified requirements. The implementation includes:
+
+- **Proper Naming Convention:** PDB name follows the required format `wed_28246_emma_event_budget_planner_db`  
+- **Complete Security Setup:** Admin user `event_admin` with password `emma` and DBA privileges  
+- **Optimized Storage:** Three dedicated tablespaces with appropriate sizing and autoextend parameters  
+- **Performance Configuration:** Memory parameters tuned for optimal performance  
+- **Data Protection:** Archive logging enabled for data recovery and audit purposes  
+
+### Technical Achievements
+- Successfully created Oracle 21c pluggable database  
+- Configured all required memory and storage parameters  
+- Implemented enterprise-grade security with DBA privileges  
+- Enabled critical database features including archive logging  
+- Verified all configurations through comprehensive testing  
+
+### Phase V Readiness
+The database is now fully prepared for Phase V implementation. All infrastructure is in place for:
+
+- Creating the 5 core business and system tables  
+- Inserting sample data (100–500 rows)  
+- Implementing constraints and indexes  
+- Beginning PL/SQL development in Phase VI  
+
+### Files Created for Phase IV
+- `database/scripts/01_database_creation.sql` – Complete database setup script  
+- `documentation/phase4_database_creation.md` – This completion report  
+- `documentation/project_overview.md` – Updated project documentation  
+- `screenshots/phase_iv/` – Complete visual documentation  
+
+### Database Metadata
+- **Database Created By:** IZA KURADUSENGE Emma Lise  
+- **Student ID:** 28246  
+- **Phase:** IV – Database Creation Complete  
+- **Date:** December 2025  
+- **Database Name:** `wed_28246_emma_event_budget_planner_db`  
+- **Status:**  Ready for Phase V Implementation
+
 
