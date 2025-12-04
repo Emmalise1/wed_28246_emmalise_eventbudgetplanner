@@ -70,7 +70,12 @@ Phase V involved the implementation of physical database tables and insertion of
 
 ###  Screenshot 2: Joins (Multi-table Queries)
 
-![Join Results](https://github.com/Emmalise1/Event-Budget-Planner/blob/main/screenshots/test_results/joins_results.jpg?raw=true)  
+![Join Results](https://github.com/Emmalise1/Event-Budget-Planner/blob/main/screenshots/test_results/Joins1.PNG?raw=true)
+
+![Join Results](https://github.com/Emmalise1/Event-Budget-Planner/blob/main/screenshots/test_results/Joins2.PNG?raw=true)
+
+![Join Results](https://github.com/Emmalise1/Event-Budget-Planner/blob/main/screenshots/test_results/Joins3.PNG?raw=true)
+
 *Figure 2: Multiple join types demonstrated, including INNER JOIN for event-category-expense chains, LEFT JOIN for budget vs actual analysis, and multi-table joins with filtering.*
 
 ---
