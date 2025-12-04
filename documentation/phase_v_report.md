@@ -7,8 +7,6 @@
 - **Course:** Database Development with PL/SQL (INSY 8311)
 - **Group:** Wednesday
 - **Lecturer:** Eric Maniraguha
-- **Institution:** Adventist University of Central Africa (AUCA)
-- **Completion Date:** December 5, 2025
 
 ### Executive Summary
 Phase V involved the implementation of physical database tables and insertion of comprehensive test data. This phase successfully created 5 normalized tables, inserted 1,580+ rows of realistic data, and verified all data integrity requirements. The database is now ready for PL/SQL development in Phase VI.
@@ -110,6 +108,113 @@ All subquery types demonstrated:
 - Required fields populated
 - Default values applied correctly
 
-### Technical Implementation
+##  Screenshot Organization
 
-#### File Structure
+All verification screenshots have been organized in the following structure:
+
+### 1. `screenshots/test_results/`
+- `basic_retrieval.jpg` – SELECT * results from all 5 tables  
+- `joins_results.jpg` – Multi-table join query outputs  
+- `aggregations.jpg` – GROUP BY aggregation results  
+- `subqueries.jpg` – Various subquery demonstrations  
+- `data_integrity.jpg` – Data integrity verification summary  
+
+### 2. `screenshots/database_objects/`
+- Table creation confirmation  
+- Constraint definitions  
+- Index creation verification  
+
+### 3. `screenshots/oem_monitoring/`
+- Database performance metrics (if applicable)  
+- Tablespace usage statistics  
+
+---
+
+##  Testing Methodology
+
+###  Test Cases Executed
+1. **Basic Retrieval Test:** Verified all tables return data  
+2. **Join Test:** Validated foreign key relationships  
+3. **Aggregation Test:** Confirmed statistical functions work  
+4. **Subquery Test:** Verified all subquery types execute  
+5. **Constraint Test:** Validated business rule enforcement  
+6. **Data Integrity Test:** Confirmed referential integrity  
+7. **Edge Case Test:** Verified NULL value handling  
+
+###  Test Results Summary
+- **Total Tests Executed:** 6  
+- **Tests Passed:** 6  
+- **Tests Failed:** 0  
+- **Success Rate:** 100%  
+
+---
+
+##  Key Statistics
+
+###  Event Distribution
+- **WEDDING:** 40 events (Average budget: RWF 17,097,775)  
+- **CORPORATE:** 35 events (Average budget: RWF 10,414,114)  
+- **CONFERENCE:** 30 events (Average budget: RWF 27,974,833)  
+- **CHARITY:** 25 events (Average budget: RWF 5,781,520)  
+- **OTHER:** 14 events (Average budget: RWF 2,166,643)  
+- **BIRTHDAY:** 6 events (Average budget: RWF 2,735,333)  
+
+###  Payment Status Distribution
+- **PAID:** 300 expenses (54.55% of total)  
+- **PENDING:** 200 expenses (36.36% of total)  
+- **CANCELLED:** 50 expenses (9.09% of total)  
+
+###  Vendor Analysis
+Top 5 vendors by total spending have been identified, with the highest being **Ubumwe Grande Hotel** (63 transactions, RWF 26.9M total).
+
+---
+
+##  Challenges and Solutions
+
+###  Challenge 1: GROUP BY Syntax Errors
+**Issue:** Oracle's strict GROUP BY requirements caused errors in some join queries.  
+**Solution:** Used `FETCH FIRST N ROWS ONLY` instead of `ROWNUM` in GROUP BY queries and ensured all non-aggregated columns were included in the GROUP BY clause.
+
+###  Challenge 2: Data Volume Requirements
+**Issue:** Meeting the 500+ rows requirement for the expenses table.  
+**Solution:** Implemented PL/SQL loops to generate realistic expense data for each category.
+
+###  Challenge 3: Constraint Validation
+**Issue:** Verifying all constraints were properly enforced.  
+**Solution:** Created comprehensive validation queries that test each constraint type.
+
+---
+
+##  Conclusion
+
+**Phase V has been successfully completed** with all requirements satisfied. The database is now:
+
+1. **Fully Populated:** 1,580+ rows of realistic data  
+2. **Properly Normalized:** 5 tables in 3NF  
+3. **Integrity Verified:** All constraints and relationships validated  
+4. **Tested:** All query types demonstrated successfully  
+5. **Documented:** Comprehensive documentation and screenshots provided  
+6. **Ready for Development:** Prepared for Phase VI PL/SQL implementation  
+
+The Event Budget Planner System database now serves as a solid foundation for the advanced PL/SQL development scheduled for Phase VI.
+
+---
+
+##  Next Steps
+
+Proceed to **Phase VI: PL/SQL Development**, which will include:
+
+1. Procedures (3–5 required)  
+2. Functions (3–5 required)  
+3. Cursors and bulk operations  
+4. Window functions  
+5. Packages  
+6. Exception handling  
+
+---
+
+###  Document Information
+- **Document Generated:** December 4, 2025  
+- **Student:** Emma Lise IZA KURADUSENGE (ID: 28246)  
+- **Course:** Database Development with PL/SQL  
+- **Lecturer:** Eric Maniraguha  
