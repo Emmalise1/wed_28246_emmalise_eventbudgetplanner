@@ -8,20 +8,17 @@
 ---
 ## Student Name and ID
 
-- STUDENT: "IZA KURADUSENGE Emma Lise"
+- STUDENT: IZA KURADUSENGE Emma Lise
 
 - STUDENT_ID: 28246
 
-- COURSE: "Database Development with PL/SQL (INSY 8311)"
+- COURSE: Database Development with PL/SQL (INSY 8311)
 
-- LECTURER: "Eric Maniraguha"
+- LECTURER: Eric Maniraguha
 
-- UNIVERSITY: "Adventist University of Central Africa"
+- UNIVERSITY: Adventist University of Central Africa
 
-- SEMESTER: "I, 2025-2026"
-
-- DEADLINE: "December 7, 2025"
-
+- SEMESTER: I, 2025-2026
 ---
 ## Problem Statement
 Manual spreadsheet budgeting for events is error-prone, lacks real-time validation, and provides no automated alerts for overspending. This leads to budget overruns, financial crises during events, and inefficient resource allocation.
