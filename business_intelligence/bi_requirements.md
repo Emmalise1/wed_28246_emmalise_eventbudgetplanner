@@ -57,7 +57,7 @@ The Event Budget Planner System requires comprehensive business intelligence to 
 - Alerting for critical thresholds
 - Role-based access control
 
-  ## 3. STAKEHOLDER DOCUMENTATION
+  ##  STAKEHOLDER DOCUMENTATION
 
 | **Stakeholder**        | **Role**                    | **Primary Dashboards**         | **Key Resource Metrics**                   |
 |------------------------|-----------------------------|--------------------------------|---------------------------------------------|
@@ -67,6 +67,47 @@ The Event Budget Planner System requires comprehensive business intelligence to 
 | **Finance Managers**   | Budget oversight            | Executive, Forecasting          | Cost variance, Payment rates               |
 | **Development Team**   | System improvement          | Performance, Forecasting        | Feature usage, System load                 |
 | **Senior Management**  | Strategic planning          | Executive, Forecasting          | ROI, Growth trends, Forecast accuracy      |
+
+## ** KEY INSIGHTS FROM RESOURCE & FORECASTING ANALYSIS**
+
+### **Resource Usage Insights**
+- **Storage Efficiency:** Database at 1.4MB (14% of 10MB limit) — *OPTIMAL*
+- **Growth Rate:** 2.1% monthly growth — projected to reach 10MB in ~48 months
+- **Performance:** Query response <100ms, CPU 42%, Memory 65% — *HEALTHY*
+- **Transaction Volume:** 1,630 transactions — indicates *active system usage*
+- **Storage Distribution:** Expenses table uses **58%** of total storage (largest table)
+
+---
+
+### **Spending Pattern Insights**
+- **December Crisis:** -88.77% drop (37 transactions vs 296 in November)
+- **Seasonal Peaks:** July +44.15% (mid-year events), March/June/September (quarter-end activity)
+- **Transaction Size:** Strong average at **RWF 209K per transaction**
+- **Forecast Accuracy:** Current model failed December prediction — requires adjustment
+- **Recovery Expected:** January forecast at **RWF 65M+**, indicating return to normal activity
+
+---
+
+### **Recommendations**
+
+#### **Resource Management**
+- No immediate action required — storage runway ≈ **48 months**
+- Monitor growth rate and flag if it exceeds **5% monthly**
+- Optimize Expenses table — consider archiving older records (currently 58% of storage)
+
+#### **Forecasting Improvement**
+- Improve December prediction model to include holiday slowdown patterns
+- Add seasonal adjustments:
+  - July: +44.15%
+  - December: -88.77%
+- Implement predictive alerts for deviations exceeding **20%**
+
+#### **Capacity Planning**
+- **Q2 2026:** Review storage and table growth
+- **Q4 2026:** Define archiving strategy
+- **2027:** Consider storage upgrade if growth accelerates
+
+
 
 
 
