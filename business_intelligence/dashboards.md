@@ -14,3 +14,6 @@ Provide senior management with high-level overview of system performance and bus
 - Weekly for summaries
 
 ## Layout Mockup
+
+![Executive_Summary](https://github.com/Emmalise1/wed_28246_emmalise_eventbudgetplanner/blob/main/screenshots/test_results/Executive%20Summary%20Dashboard.png?raw=true)
+
