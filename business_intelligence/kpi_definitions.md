@@ -100,5 +100,22 @@
 - **Formula:** (Denied Operations ÷ Total Operations) × 100
 - **Current Value:** 0.36%
 - **Target:** ≤1%
-- **Status:** ✅ EXCELLENT
+- **Status:** EXCELLENT
 - **Data Source:** AUDIT_LOG table
+
+| **KPI Category**        | **KPI Name**               | **Current Value** | **Target**     | **Status**        | **Business Impact**                      |
+|-------------------------|----------------------------|-------------------|----------------|-------------------|-------------------------------------------|
+| **Financial Performance** | Budget Utilization Rate     | 16.04%            | 70–90%         |  **CRITICAL**    | RWF 1,783M unused budget                  |
+|                         | Cost Variance               | -83.96%           | ±10%           |  **SEVERE**      | Severe budget planning issues             |
+|                         | Payment Completion Rate      | 50%               | ≥95%           |  **CRITICAL**    | 394 pending payments (RWF 82M)            |
+| **Resource Usage**      | Database Storage            | 1.4 MB            | <10 MB         |  **OPTIMAL**      | Efficient storage utilization             |
+|                         | Transaction Volume          | 1,630             | N/A            |  **HEALTHY**      | Active system usage                       |
+|                         | Avg Query Response          | <100ms            | <200ms         |  **EXCELLENT**    | Fast system performance                   |
+| **Growth & Forecasting** | Monthly Growth (Dec)        | -88.77%           | +5–10%         |  **CRISIS**      | December spending collapse                |
+|                         | Forecast Next Month         | RWF 65M+          | +10%           |  **RECOVERY**     | Expected January rebound                  |
+|                         | Avg Transaction             | RWF 209K          | RWF 200K+      |  **HEALTHY**      | Strong transaction values                 |
+| **System Performance**  | System Uptime               | 100%              | ≥99.5%         |  **EXCELLENT**    | Reliable system operation                 |
+|                         | Data Completeness           | 97.98%            | ≥98%           |  **EXCELLENT**    | High data quality                         |
+| **User Adoption**       | User Adoption Rate          | 2.67%             | ≥80%           |  **CRITICAL**    | Low user engagement                       |
+
+
