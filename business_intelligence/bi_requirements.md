@@ -37,5 +37,23 @@ The Event Budget Planner System requires comprehensive business intelligence to 
 - Real-time data refresh where applicable
 - Historical trend analysis (6+ months)
 - Forecasting capabilities
+
+  ## ** DECISION SUPPORT NEEDS**
+
+### **Critical Decisions Based on Resource Usage**
+- **Storage Capacity Planning:** Database at 1.4MB with 2.1% monthly growth — when to scale?
+- **Performance Optimization:** Query response <100ms — maintain or improve?
+- **Transaction Volume Management:** 1,630 transactions — optimize processing?
+- **Forecasting Accuracy:** December forecast failed — improve prediction models?
+- **Resource Allocation:** CPU 42%, Memory 65% — optimize server resources?
+
+### **Analytical Support Needed**
+- **Resource Forecasting:** When will storage reach the 10MB limit?
+- **Performance Benchmarks:** Compare query times to industry standards.
+- **Capacity Planning:** Project transaction growth for the next 6 months.
+- **Seasonal Pattern Analysis:** Predict future December drops.
+- **Cost Optimization:** Identify areas of resource waste.
+
 - Alerting for critical thresholds
 - Role-based access control
+
