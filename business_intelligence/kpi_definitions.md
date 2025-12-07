@@ -8,43 +8,97 @@
 - **Group:** Wednesday
 - **Lecturer:** Eric Maniraguha
 
-# KPI Definitions & Metrics
+# KPI Definitions
 
-## Key Performance Indicators
+## Financial Performance KPIs
 
-| KPI | Formula | Current Value | Target Range | Status | Owner |
-|-----|---------|---------------|--------------|---------|--------|
-| **Budget Utilization Rate** | `(Actual Spending / Total Budget) × 100` | 16.04% | 70-90% | ⚠️ Critical | Finance |
-| **Cost Variance** | `((Actual - Budget) / Budget) × 100` | -83.96% | ±10% | ⚠️ Under Budget | Finance |
-| **Payment Completion Rate** | `(Completed Payments / Total Payments) × 100` | 67.5% | ≥95% | ⚠️ Needs Improvement | Operations |
-| **Monthly Growth Rate** | `((Current Month - Previous Month) / Previous Month) × 100` | -88.77% | +5-10% | ⚠️ Declining | Management |
-| **Event Completion Rate** | `(Completed Events / Total Events) × 100` | 12% | Event-specific | ✅ Good | Operations |
-| **Over Budget Events** | `Count(Events where Actual > Budget)` | 0 | ≤5% | ✅ Excellent | Finance |
-| **Avg Transaction Value** | `SUM(Amount) / COUNT(Transactions)` | RWF 209,060 | Category-specific | 📊 Benchmark | Procurement |
-| **Vendor Performance Score** | `% of Platinum-tier vendors` | 100% | ≥80% | ✅ Excellent | Procurement |
-
-## Data Sources
-| KPI | Primary Table | Secondary Tables | Update Frequency |
-|-----|---------------|------------------|------------------|
-| Budget Utilization | EVENTS | EXPENSE_CATEGORIES | Real-time |
-| Payment Metrics | EXPENSES | - | Daily |
-| Vendor Performance | EXPENSES | EXPENSE_CATEGORIES, EVENTS | Monthly |
-| Spending Trends | EXPENSES | EXPENSE_CATEGORIES | Weekly |
-| Audit Compliance | AUDIT_LOG | - | Real-time |
-
-## KPI Calculation Details
 ### Budget Utilization Rate
-```sql
-SELECT 
-    ROUND(SUM(actual_spending) / NULLIF(SUM(total_budget), 0) * 100, 2) as budget_utilization_rate
-FROM events;
-```
+- **Formula:** (Total Actual Spending ÷ Total Budget) × 100
+- **Current Value:** 16.04%
+- **Target Range:** 70-90%
+- **Status:**  CRITICAL
+- **Impact:** RWF 1,783M unused budget allocation
+- **Data Source:** EVENTS table
+
+### Cost Variance
+- **Formula:** (Actual Spending - Budget) ÷ Budget × 100
+- **Current Value:** -83.96%
+- **Target:** ±10%
+- **Status:**  SEVERE
+- **Impact:** Severe budget planning issues
+- **Data Source:** EVENTS table
+
+### Payment Completion Rate
+- **Formula:** (Paid Expenses ÷ Total Expenses) × 100
+- **Current Value:** 50%
+- **Target:** ≥95%
+- **Status:**  CRITICAL
+- **Impact:** 394 pending payments (RWF 82M)
+- **Data Source:** EXPENSES table
+
+## Resource Usage KPIs
+
+### Database Storage Utilization
+- **Current Value:** 1.4 MB
+- **Target:** <10 MB
+- **Status:**  OPTIMAL
+- **Growth Rate:** 2.1% monthly
+- **Projection:** 1.8MB by March 2026
+
+### System Uptime
+- **Current Value:** 100%
+- **Target:** ≥99.5%
+- **Status:**  EXCELLENT
+- **Measurement:** Continuous monitoring
+- **Alert Threshold:** <99%
+
+### Query Response Time
+- **Current Value:** <100ms
+- **Target:** <200ms
+- **Status:**  EXCELLENT
+- **Measurement:** Average query execution
+- **Peak Allowed:** <500ms
+
+## Growth & Forecasting KPIs
+
 ### Monthly Growth Rate
-```sql
-SELECT 
-    TO_CHAR(DATE_ADDED, 'YYYY-MM') as month,
-    ROUND(SUM(amount) / NULLIF(LAG(SUM(amount), 1) 
-          OVER (ORDER BY TO_CHAR(DATE_ADDED, 'YYYY-MM')), 0) * 100 - 100, 2) as growth_rate
-FROM expenses
-GROUP BY TO_CHAR(DATE_ADDED, 'YYYY-MM');
-```
+- **Current (Dec 2025):** -88.77%
+- **Target:** +5-10%
+- **Status:**  CRISIS
+- **Impact:** December spending collapse
+- **Data Source:** EXPENSES table
+
+### Next Month Forecast
+- **Current Forecast:** RWF 65M+
+- **Target Accuracy:** ±15%
+- **Status:**  RECOVERY
+- **Basis:** Historical patterns + seasonal adjustment
+
+### Average Transaction Value
+- **Current Value:** RWF 209,060
+- **Benchmark:** RWF 200,000+
+- **Status:**  HEALTHY
+- **Trend:** Stable with minor fluctuations
+
+## System Performance KPIs
+
+### Data Completeness Rate
+- **Formula:** (Complete Records ÷ Total Records) × 100
+- **Current Value:** 97.98%
+- **Target:** ≥98%
+- **Status:**  EXCELLENT
+- **Focus Area:** Vendor name tracking
+
+### User Adoption Rate
+- **Formula:** (Active Users ÷ Registered Users) × 100
+- **Current Value:** 2.67%
+- **Target:** ≥80%
+- **Status:**  CRITICAL
+- **Issue:** Only 4 users created 150 events
+
+### System Denial Rate
+- **Formula:** (Denied Operations ÷ Total Operations) × 100
+- **Current Value:** 0.36%
+- **Target:** ≤1%
+- **Status:** ✅ EXCELLENT
+- **Data Source:** AUDIT_LOG table
