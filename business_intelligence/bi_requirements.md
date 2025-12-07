@@ -57,4 +57,17 @@ The Event Budget Planner System requires comprehensive business intelligence to 
 - Alerting for critical thresholds
 - Role-based access control
 
+  ## 3. STAKEHOLDER DOCUMENTATION
+
+| **Stakeholder**        | **Role**                    | **Primary Dashboards**         | **Key Resource Metrics**                   |
+|------------------------|-----------------------------|--------------------------------|---------------------------------------------|
+| **System Administrators** | Infrastructure management   | Performance, Resource Usage     | Storage, CPU, Memory, Uptime               |
+| **Database Administrators** | Database optimization      | Performance, Resource Usage     | Query times, Index usage, Growth           |
+| **Event Planners**     | End users                   | Executive, Spending Patterns    | Budget utilization, Spending trends        |
+| **Finance Managers**   | Budget oversight            | Executive, Forecasting          | Cost variance, Payment rates               |
+| **Development Team**   | System improvement          | Performance, Forecasting        | Feature usage, System load                 |
+| **Senior Management**  | Strategic planning          | Executive, Forecasting          | ROI, Growth trends, Forecast accuracy      |
+
+
+
 
