@@ -29,3 +29,20 @@ Provide senior management with high-level overview of system performance and bus
 ![Executive_Summary](https://github.com/Emmalise1/wed_28246_emmalise_eventbudgetplanner/blob/main/screenshots/test_results/Executive%20Summary%20Dashboard.png?raw=true)
 
 
+## Data Sources
+- EVENTS table for budget and spending data
+- EXPENSES table for payment information
+- Monthly aggregation from expense dates
+
+## Key Features
+1. **Color-coded KPIs** (Green/Amber/Red based on targets)
+2. **Trend visualization** with 6-month history
+3. **Critical alerts** for immediate attention items
+4. **Actionable recommendations**
+5. **Forecast indicators**
+
+## Related Queries
+- `01_executive_kpi_calculation.sql`
+- `02_spending_patterns_analysis.sql`
+
+
