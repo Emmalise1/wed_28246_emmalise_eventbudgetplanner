@@ -33,26 +33,30 @@ Manual spreadsheet budgeting for events is error-prone, lacks real-time validati
 5. Restrict DML to weekends (Phase VII requirement)
 
 ---
-
 ## Quick Start Instructions
-
 ```
 # 1. Clone Repository
-git clone https://github.com/Emmalise1/Event-Budget-Planner.git
-cd Event-Budget-Planner
+git clone https://github.com/Emmalise1/wed_28246_emmalise_eventbudgetplanner.git
+cd wed_28246_emmalise_eventbudgetplanner
 
-# 2. Database Setup
+# 2. Database Setup (As SYSDBA)
 sqlplus / as sysdba
 @database/scripts/01_database_creation.sql
 
-# 3. Table Implementation  
-CONNECT event_admin/emma@tue_28246_emma_eventbudget_db
+# 3. Connect to PDB and Create Tables
+sqlplus event_admin/emma@localhost:1521/wed_28246_emma_event_budget_planner_db
 @database/scripts/02_table_creation.sql
+
+# 4. Insert Sample Data
 @database/scripts/03_sample_data.sql
 
-# 4. PL/SQL Development
+# 5. PL/SQL Development
 @database/scripts/04_procedures_functions.sql
 @database/scripts/05_triggers_audit.sql
+@database/scripts/06_advanced_features.sql
+
+# 6. Verify Setup
+@queries/verification_queries.sql
 ```
 ---
 ## Links to Documentation
