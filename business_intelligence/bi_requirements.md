@@ -68,9 +68,9 @@ The Event Budget Planner System requires comprehensive business intelligence to 
 | **Development Team**   | System improvement          | Performance, Forecasting        | Feature usage, System load                 |
 | **Senior Management**  | Strategic planning          | Executive, Forecasting          | ROI, Growth trends, Forecast accuracy      |
 
-## ** KEY INSIGHTS FROM RESOURCE & FORECASTING ANALYSIS**
+##  KEY INSIGHTS FROM RESOURCE & FORECASTING ANALYSIS
 
-### **Resource Usage Insights**
+### Resource Usage Insights
 - **Storage Efficiency:** Database at 1.4MB (14% of 10MB limit) — *OPTIMAL*
 - **Growth Rate:** 2.1% monthly growth — projected to reach 10MB in ~48 months
 - **Performance:** Query response <100ms, CPU 42%, Memory 65% — *HEALTHY*
@@ -79,7 +79,7 @@ The Event Budget Planner System requires comprehensive business intelligence to 
 
 ---
 
-### **Spending Pattern Insights**
+### Spending Pattern Insights
 - **December Crisis:** -88.77% drop (37 transactions vs 296 in November)
 - **Seasonal Peaks:** July +44.15% (mid-year events), March/June/September (quarter-end activity)
 - **Transaction Size:** Strong average at **RWF 209K per transaction**
@@ -106,6 +106,7 @@ The Event Budget Planner System requires comprehensive business intelligence to 
 - **Q2 2026:** Review storage and table growth
 - **Q4 2026:** Define archiving strategy
 - **2027:** Consider storage upgrade if growth accelerates
+
 
 
 
