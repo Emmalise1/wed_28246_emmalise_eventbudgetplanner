@@ -57,6 +57,9 @@ sqlplus event_admin/emma@localhost:1522/wed_28246_emma_event_budget_planner_db
 @database/scripts/07.1_packages_specifications.sql
 @database/scripts/07.2_packages_bodies.sql
 @database/scripts/10_cursors.sql
+@database/scripts/11_window_functions.sql
+@database/scripts/12_exception_handling.sql
+@database/scripts/13_audit_queries.sql
 
 # 6. Verify Setup
 @queries/08_validation_queries.sql
