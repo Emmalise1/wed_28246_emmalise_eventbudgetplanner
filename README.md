@@ -44,19 +44,23 @@ sqlplus / as sysdba
 @database/scripts/01_database_creation.sql
 
 # 3. Connect to PDB and Create Tables
-sqlplus event_admin/emma@localhost:1521/wed_28246_emma_event_budget_planner_db
+sqlplus event_admin/emma@localhost:1522/wed_28246_emma_event_budget_planner_db
 @database/scripts/02_table_creation.sql
 
 # 4. Insert Sample Data
 @database/scripts/03_sample_data.sql
 
 # 5. PL/SQL Development
-@database/scripts/04_procedures_functions.sql
-@database/scripts/05_triggers_audit.sql
-@database/scripts/06_advanced_features.sql
+@database/scripts/04_procedures.sql
+@database/scripts/05_functions.sql
+@database/scripts/06_triggers.sql
+@database/scripts/07.1_packages_specifications.sql
+@database/scripts/07.2_packages_bodies.sql
+@database/scripts/10_cursors.sql
 
 # 6. Verify Setup
-@queries/verification_queries.sql
+@queries/08_validation_queries.sql
+@queries/09_test_results.sql
 ```
 ---
 ## Links to Documentation
