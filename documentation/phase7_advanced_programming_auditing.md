@@ -62,7 +62,6 @@ CREATE TABLE holidays (
 );
 
 -- December 2025 Holidays Configured:
--- December 1: National Heroes Day
 -- December 25: Christmas Day
 -- December 26: Boxing Day
 ```
